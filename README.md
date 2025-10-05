@@ -1,5 +1,7 @@
 # 🏆 WorldSkills Colombia 2025 – 🥇 Oro Nacional en Tecnologías Web
 
+[🥈 Ver anterior competencia (Preselección)](https://github.com/AndresGutierrezHurtado/worldskills-preseleccion-2025)
+
 Este repositorio reúne todo el trabajo que desarrollé durante mi participación en la **competencia nacional WorldSkills Colombia 2025**, en la habilidad **17 - Tecnologías Web**, donde obtuve el **primer lugar a nivel nacional** 🥇.
 
 Durante tres días de competencia, representé a la regional **Distrito Capital** enfrentando pruebas de alto nivel técnico que pusieron a prueba mi conocimiento, capacidad de adaptación y manejo del tiempo bajo presión.
