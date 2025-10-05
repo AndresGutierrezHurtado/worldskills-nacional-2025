@@ -10,3 +10,11 @@ En esta fase participamos los **seis mejores competidores del país**, cada uno 
 
 Aquí encontrarás todas las **tareas entregadas**, los **recursos utilizados** y los **proyectos desarrollados**, con un enfoque técnico sólido y soluciones prácticas que me permitieron destacar y obtener el primer lugar.
 
+<div align="center">
+
+![WorldSkills Colombia 2025](https://img.shields.io/badge/WorldSkills-Colombia_2025-005EB8?style=for-the-badge)
+![Habilidad 17 – Tecnologías Web](https://img.shields.io/badge/Habilidad-17_Tecnologías_Web-orange?style=for-the-badge)
+
+</div>
+
+![Imagen de ceremonia de clausura](docs/images/podio.jpg)
