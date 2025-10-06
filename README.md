@@ -42,3 +42,13 @@ _Medalla y camiseta obtenidas por alcanzar el primer lugar nacional._
 _Entrevista con Cristian Henao, creador de contenido sobre programación, durante la competencia nacional_
 
 </div>
+
+---
+
+## 🏆 ¿Qué son las WorldSkills?
+
+Las **WorldSkills** son una competencia internacional en la que aprendices de todo el mundo demuestran sus habilidades en diversas áreas técnicas y tecnológicas, como **programación, diseño, robótica, cocina**, entre muchas otras.  
+
+Son, en esencia, las **olimpiadas de las habilidades técnicas**, donde no solo se evalúan conocimientos, sino también la capacidad de trabajar bajo presión y en condiciones que simulan un entorno laboral real.  
+
+El objetivo principal de las WorldSkills es **destacar el nivel de formación, talento y excelencia** de los estudiantes y profesionales, además de **impulsar la educación práctica** y la mejora continua en los estándares de calidad del trabajo técnico.
