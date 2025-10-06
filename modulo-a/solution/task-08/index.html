@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <form id="form">
+            <input type="text" placeholder="Ingresa una ciudad..." name="city">
+            <button>Buscar</button>
+        </form>
+
+        <article class="weather_container">
+            <h2 id="title">Ciudad</h2>
+            <h1 id="weather">25°C</h1>
+            <p id="message">Soleado</p>
+        </article>
+    </div>
+    <script>
+        const $form = document.getElementById("form");
+        const $title = document.getElementById("title");
+        const $weather = document.getElementById("weather");
+        const $message = document.getElementById("message");
+        const $container = document.querySelector(".weather_container");
+
+        $form.addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            const { city } = Object.fromEntries(new FormData($form));
+
+            if (!city) return alert("Debes ingresar una ciudad");
+
+            const weather = Math.round((Math.random() * 100) % 40);
+
+            let status;
+            let message;
+            if (weather < 10) {
+                status = "cold";
+                message = "Frio";
+                $container.style.setProperty("background-color", "#3252e2")
+            } else if (weather > 30) {
+                status = "hot";
+                message = "Soleado"
+                $container.style.setProperty("background-color", "#e23232")
+            } else {
+                status = "warm";
+                message = "Templado"
+                $container.style.setProperty("background-color", "#81e232")
+            }
+
+            $title.innerText = city;
+            $weather.innerText = `${weather}°C`;
+            $message.innerText = message;
+        });
+    </script>
+</body>
+
+</html>

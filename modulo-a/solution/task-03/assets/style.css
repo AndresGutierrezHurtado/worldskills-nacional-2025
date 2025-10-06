@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(204, 203, 203);
+    height: 100dvh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    background-color: white;
+    text-align: center;
+    padding: 3rem;
+    border-radius: 1rem;
+    width: fit-content;
+
+    & > * {
+        margin-bottom: 1rem;
+        font-size: 2em;
+    }
+
+    & input {
+        font-size: 1.3em;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        border: 1px solid black;
+    }
+}

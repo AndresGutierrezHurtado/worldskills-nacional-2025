@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Contador de palabras</h1>
+        <input type="text" id="input" placeholder="Escribe algo...">
+        <p id="result">🔊 0 Vocales encontradas</p>
+    </div>
+    <script>
+        const $input = document.getElementById("input");
+        const $result = document.getElementById("result");
+        const letters = "aeiouáéíóúAEIOUÁÉÍÓÚ";
+
+        function validar(e) {
+            const value = $input.value;
+            let count = 0;
+
+            value.split("").forEach(letter => {
+                console.log(letters.split("").includes(letter))
+                if (letters.split("").includes(letter)) {
+                    count += 1;
+                }
+            });
+
+            $result.innerText = `🔊 ${count} Vocales encontradas`;
+        }
+
+        document.addEventListener("keydown", validar);
+        $input.addEventListener("change", validar);
+        $input.addEventListener("input", validar);
+    </script>
+</body>
+
+</html>
