@@ -59,6 +59,15 @@ El objetivo principal de las WorldSkills es **destacar el nivel de formación, t
 
 Para el desarrollo de la prueba solo se permitió **Visual Studio Code como IDE**, sin extensiones, y con **una única oportunidad de uso de internet por módulo** (máximo de 5 minutos).
 
+### Módulo A – Ejercicios Técnicos (Sueldos, lógica y fundamentos) (10%)
+
+En este módulo se abordaron **retos prácticos de lógica y programación** enfocados en evaluar el dominio de los **fundamentos del desarrollo web**.
+Las pruebas incluyeron ejercicios como **verificación de palíndromos en PHP**, **resolución de problemas lógicos con JavaScript**, y la **recreación de una interfaz básica** para medir el manejo de **HTML, CSS, JS y PHP** sin apoyo de frameworks ni librerías externas.
+
+El propósito del módulo fue comprobar la **capacidad de análisis, razonamiento algorítmico y adaptación técnica** bajo tiempo limitado.
+
+[Ver detalles de la prueba](./modulo-a/README.md)
+
 ---
 
 ## 📬 Contacto
