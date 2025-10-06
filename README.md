@@ -52,3 +52,21 @@ Las **WorldSkills** son una competencia internacional en la que aprendices de to
 Son, en esencia, las **olimpiadas de las habilidades técnicas**, donde no solo se evalúan conocimientos, sino también la capacidad de trabajar bajo presión y en condiciones que simulan un entorno laboral real.  
 
 El objetivo principal de las WorldSkills es **destacar el nivel de formación, talento y excelencia** de los estudiantes y profesionales, además de **impulsar la educación práctica** y la mejora continua en los estándares de calidad del trabajo técnico.
+
+---
+
+## 🎯 Módulos de Competencia
+
+Para el desarrollo de la prueba solo se permitió **Visual Studio Code como IDE**, sin extensiones, y con **una única oportunidad de uso de internet por módulo** (máximo de 5 minutos).
+
+---
+
+## 📬 Contacto
+
+Para preguntas, soporte o colaboración, por favor contacta:
+
+-   Andrés Gutiérrez Hurtado
+-   Correo: [andres52885241@gmail.com](mailto:andres52885241@gmail.com)
+-   LinkedIn: [Andrés Gutiérrez](https://www.linkedin.com/in/andr%C3%A9s-guti%C3%A9rrez-hurtado-25946728b/)
+-   GitHub: [@AndresGutierrezHurtado](https://github.com/AndresGutierrezHurtado)
+-   Portafolio: [Link portafolio](https://andres-portfolio-b4dv.onrender.com)
