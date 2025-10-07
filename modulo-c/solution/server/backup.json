@@ -1,0 +1,39 @@
+{
+    "movies": [
+        {
+            "id": 1,
+            "titulo": "Inception",
+            "director": "Christopher Nolan",
+            "generos": [
+                "Acci\u00f3n",
+                "Ciencia Ficci\u00f3n",
+                "Suspenso"
+            ],
+            "anio": 2010,
+            "valoracion": 8.8,
+            "sinopsis": "Un ladr\u00f3n que roba secretos corporativos...",
+            "duracion": 148,
+            "poster": "inception.jpg",
+            "actores": [
+                "Leonardo DiCaprio",
+                "Joseph Gordon-Levitt",
+                "Ellen Page"
+            ],
+            "created_at": 1759266492,
+            "updated_at": 1759266492
+        },
+        {
+            "id": 2,
+            "titulo": "PELICULA CREADA",
+            "director": "Andr\u00e9s Guti\u00e9rrez Hurtado",
+            "anio": 2025,
+            "generos": [
+                "Ciencia Ficci\u00f3n"
+            ],
+            "valoracion": 0,
+            "duracion": 0,
+            "created_at": 1759266803,
+            "updated_at": 1759266803
+        }
+    ]
+}

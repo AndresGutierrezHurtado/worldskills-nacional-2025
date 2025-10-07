@@ -1,0 +1,67 @@
+{
+    "movies": [
+        {
+            "id": 2,
+            "titulo": "Terminator",
+            "director": "Andr\u00e9s Guti\u00e9rrez Hurtado",
+            "anio": 2025,
+            "generos": [
+                "Acci\u00f3n"
+            ],
+            "valoracion": 1,
+            "duracion": 0,
+            "created_at": 1759269095,
+            "updated_at": 1759269095
+        },
+        {
+            "id": 3,
+            "titulo": "Son como ni\u00f1os",
+            "director": "Andr\u00e9s Guti\u00e9rrez Hurtado",
+            "anio": 2025,
+            "generos": [
+                "Comedia"
+            ],
+            "valoracion": 3,
+            "duracion": 0,
+            "created_at": 1759269114,
+            "updated_at": 1759269114
+        },
+        {
+            "id": 4,
+            "titulo": "Anabelle",
+            "director": "Andr\u00e9s Guti\u00e9rrez Hurtado",
+            "anio": 2025,
+            "generos": [
+                "Suspenso"
+            ],
+            "valoracion": 4.3,
+            "duracion": 0,
+            "created_at": 1759269144,
+            "updated_at": 1759269144
+        },
+        {
+            "id": 5,
+            "titulo": "Scary Movie",
+            "director": "Andr\u00e9s Guti\u00e9rrez Hurtado",
+            "anio": 2025,
+            "generos": [
+                "Terror"
+            ],
+            "valoracion": 1.5,
+            "duracion": 0,
+            "created_at": 1759269154,
+            "updated_at": 1759269154
+        },
+        {
+            "id": 6,
+            "titulo": "Scary Movie Re Remake",
+            "director": "Andr\u00e9s Guti\u00e9rrez Hurtado",
+            "anio": 2025,
+            "generos": ["Terror"],
+            "valoracion": 100,
+            "duracion": 0,
+            "created_at": 1759374256,
+            "updated_at": 1759374256
+        }
+    ]
+}
