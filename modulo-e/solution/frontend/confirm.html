@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+
+    <link rel="stylesheet" href="style-guide/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="body--main">
+    <header class="header">
+        <h1>ConcertTickets</h1>
+        <p>Encuentra los mejores eventos</p>
+    </header>
+
+    <main class="main">
+        <section class="success-container">
+            <i class="fa-solid fa-circle-check"
+                style="font-size: 100px; color: var(--color-success); margin: 2rem auto;"></i>
+            <h1>¡Felicidades!</h1>
+            <p>Tu compra se ha realizado con éxito</p>
+            <p id="codigo"><b>Código:</b> TICKET-ABC123XY</p>
+            <p id="total"><b>Total:</b>$240</p>
+            <p id="usuario">Hemos enviado los detalles a usuario@email.com</p>
+        </section>
+
+        <section class="section-goback">
+            <a href="index.html" class="button">
+                <div class="fa-solid fa-home"></div>
+                Volver al inicio
+            </a class="button">
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div>
+            <a href="index.html" class="button">
+                <i class="fa-solid fa-home" style="font-size: 22px; color: var(--color-primary)"></i>
+                Inicio
+            </a>
+            <a href="tickets.html" class="button">
+                <i class="fa-solid fa-ticket" style="font-size: 22px;"></i>
+                Mis tickets
+            </a>
+            <a class="button">
+                <i class="fa-solid fa-search" style="font-size: 22px;"></i>
+                Buscar
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // GET ID
+            const id = 1;
+
+            // ELEMENTS
+            const $codigo = document.getElementById("codigo");
+            const $total = document.getElementById("total");
+            const $usuario = document.getElementById("usuario");
+
+            getBasicContent();
+
+            // HELPER FUNCTIONS
+            async function getBasicContent() {
+                const response = await fetchData("get", `http://localhost:8000/api/purchases/${id}`);
+
+                if (!response.success) return;
+
+                printContent(response.data);
+            }
+
+            async function fetchData(method, endpoint) {
+                const response = await fetch(endpoint, {
+                    headers: {
+                        "Content-Type": "application/json",
+                        "Accept": "application/json"
+                    },
+                    method
+                });
+
+                const data = await response.json();
+
+                return data;
+            }
+
+            function printContent(data) {
+                $codigo.innerHTML = `<b>Código:</b> ${data.confirmation_code}`;
+                $total.innerHTML = `<b>Total:</b> $${data.total}`;
+                $usuario.innerText = `Hemos enviado los detalles a ${data.customer_name} (${data.customer_email})`;
+            }
+        });
+    </script>
+</body>
+
+</html>

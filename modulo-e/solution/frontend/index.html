@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+
+    <link rel="stylesheet" href="style-guide/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="body--main">
+    <header class="header">
+        <h1>ConcertTickets</h1>
+        <p>Encuentra los mejores eventos</p>
+    </header>
+
+    <main class="main">
+        <section class="filters">
+            <div class="filters__input">
+                <input type="text" placeholder="Buscar conciertos..." id="searchinput">
+                <button id="search">
+                    <i class="fa-solid fa-search"></i>
+                </button>
+            </div>
+            <nav class="filters__nav">
+                <button data-genre="" class="active" id="all">Todos</button>
+                <button data-genre="rock" class="">Rock</button>
+                <button data-genre="pop" class="">Pop</button>
+                <button data-genre="electronica" class="">Electrónica</button>
+            </nav>
+        </section>
+
+        <section class="concerts">
+            <h2>Conciertos Disponibles</h2>
+            <div class="concerts__cards-container">
+                Cargando...
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div>
+            <a href="index.html" class="button">
+                <i class="fa-solid fa-home" style="font-size: 22px; color: var(--color-primary)"></i>
+                Inicio
+            </a>
+            <a href="tickets.html" class="button">
+                <i class="fa-solid fa-ticket" style="font-size: 22px;"></i>
+                Mis tickets
+            </a>
+            <a class="button">
+                <i class="fa-solid fa-search" style="font-size: 22px;"></i>
+                Buscar
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // 
+            const $search = document.getElementById("search");
+            const $searchinput = document.getElementById("searchinput");
+            const $container = document.querySelector(".concerts__cards-container");
+            const $buttons = document.querySelectorAll(".filters__nav button");
+
+            getBasicContent();
+
+            $search.addEventListener("click", (e) => {
+                getBasicContent();
+            })
+
+            $buttons.forEach(button => {
+                button.addEventListener("click", handleGetGenre);
+            })
+
+            // HELPER FUNCTIONS
+            async function getBasicContent(endpoint = null) {
+                const search = $searchinput.value;
+
+                if (search.length > 0) {
+                    document.querySelectorAll(".filters__nav button").forEach(button => {
+                        button.classList.remove("active");
+                    });
+                    document.getElementById("all").classList.add("active");
+                } else {
+                    document.querySelectorAll(".filters__nav button").forEach(button => {
+                        button.classList.remove("active");
+                    });
+
+                    document.getElementById("all").classList.add("active");
+                }
+
+                const endpoint2 = !endpoint ? `http://localhost:8000/api/events?search=${search}` : endpoint;
+                const response = await fetchData("get", endpoint2);
+
+                if (!response.success) return;
+
+                printContent(response.data);
+
+                if (response.data.length === 0) {
+                    $container.innerHTML = "sin resultados...";
+                }
+            }
+
+            async function handleGetGenre(e) {
+                e.preventDefault();
+
+                const category = e.target.dataset.genre;
+                let endpoint = "";
+
+                switch (category) {
+                    case "rock":
+                        endpoint = "http://localhost:8000/api/events/genre/rock"
+                        break;
+
+                    case "pop":
+                        endpoint = "http://localhost:8000/api/events/genre/pop"
+                        break;
+
+                    case "electronica":
+                        endpoint = "http://localhost:8000/api/events/genre/electronic"
+                        break;
+
+                    default:
+                        endpoint = "http://localhost:8000/api/events"
+                        break;
+                }
+
+                getBasicContent(endpoint);
+
+                document.querySelectorAll(".filters__nav button").forEach(button => {
+                    button.classList.remove("active");
+                });
+
+                e.target.classList.add("active");
+            }
+
+            async function fetchData(method, endpoint) {
+                const response = await fetch(endpoint, {
+                    headers: {
+                        "Content-Type": "application/json",
+                        "Accept": "application/json"
+                    },
+                    method
+                });
+
+                const data = await response.json();
+
+                return data;
+            }
+
+            function printContent(concerts) {
+                $container.innerHTML = "";
+                concerts.forEach(concert => {
+                    $container.insertAdjacentHTML("beforeend", `
+                        <article class="concert-card">
+                            <figure>
+                                <img src="${concert.image_url}" alt="Imagen de ${concert.name}">
+                            </figure>
+                            <div class="concert-card__content">
+                                <div class="badge">${concert.genre}</div>
+                                <h3>${concert.name}</h3>
+                                <div class="concert-card__details">
+                                    <span>
+                                        <i class="fa-solid fa-calendar"></i>
+                                        ${new Date(concert.date).toLocaleString()}
+                                    </span>
+                                    <span>
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        ${concert.venue}
+                                    </span>
+                                </div>
+                                <h4>Desde $50</h4>
+                                <a href="./select.html?id=${concert.id}" class="button">
+                                    <i class="fa-solid fa-ticket"></i>
+                                    Comprar Boletos
+                                </a>
+                            </div>
+                        </article>
+                    `);
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

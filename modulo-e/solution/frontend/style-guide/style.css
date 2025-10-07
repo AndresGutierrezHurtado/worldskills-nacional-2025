@@ -1,0 +1,605 @@
+/* CONFIRM VIEW */
+.success-container {
+    padding: 2rem 1rem;
+}
+
+:root {
+    --color-primary: #6e48aa;
+    --color-primary-content: #fff;
+    --color-secondary: #FF9800;
+    --color-accent: #E91E63;
+    --color-success: #4CAF50;
+    --color-error: #F44336;
+    --font-main: "Segoe UI";
+    --font-headers: "Tahoma";
+    --font-body: "Geneva";
+    --font-small: "Verdana";
+    --font-buttons: "sans-serif";
+}
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    max-width: 500px;
+    margin: auto;
+}
+
+.header {
+    width: 100%;
+    padding: 1rem 1rem;
+    text-align: center;
+    z-index: 99999;
+
+    position: sticky;
+    top: 0;
+    background-color: var(--color-primary);
+    color: var(--color-primary-content);
+    border-radius: 0px 0px 10px 10px;
+
+    &>h1 {
+        font-size: 2.5em;
+        font-weight: 600;
+        line-height: 1.3;
+    }
+
+    &>p {
+        font-weight: 100;
+        opacity: 0.9;
+        font-size: 1.1em;
+    }
+}
+
+main {
+    padding-bottom: 100px;
+}
+
+.body--main {
+    background-color: rgb(235, 235, 235);
+}
+
+
+.footer {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+    box-shadow: -5px -5px 0.5rem 0.1rem #00000030;
+    z-index: 99999;
+
+    &>div {
+        padding: 1rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        &>.button {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            gap: 5px;
+            color: #00000090;
+        }
+    }
+}
+
+
+/* ======== VISTA INDICE ======== */
+.filters {
+    width: 100%;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.filters__input {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    &>input {
+        border: 1px solid #00000030;
+        border-radius: 2rem;
+        padding: 0.5rem 1rem;
+        width: 100%;
+        background-color: white;
+    }
+
+    &>button {
+        background-color: var(--color-primary);
+        color: var(--color-primary-content);
+        padding: 0.5rem 1.5rem;
+        border-radius: 0.5rem;
+    }
+}
+
+.filters__nav {
+    background-color: white;
+    border-radius: 4rem;
+    box-shadow: 1px 1px 0.5rem 0.1rem #00000015;
+    padding: 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &>* {
+        padding: 0.5rem 1.1rem;
+        border-radius: 2rem;
+    }
+
+    &>.active {
+        background-color: var(--color-primary);
+    }
+}
+
+.concerts {
+    width: 100%;
+    padding: 0rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+
+    &>h2 {
+        font-size: 1.5em;
+        font-weight: 500;
+        line-height: 0.9;
+    }
+}
+
+.concerts__cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.concert-card {
+    background-color: white;
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 0.5rem 0.1rem #00000030;
+
+    &>figure {
+        width: 100%;
+        aspect-ratio: 15/9;
+
+        &>img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .concert-card__content {
+        width: 100%;
+        padding: 0.75rem;
+
+        &>.badge {
+            background-color: #6e48aa60;
+            color: #6e48aa;
+            width: fit-content;
+            border-radius: 1rem;
+            padding: 0.1rem 0.5rem;
+            font-size: 0.8em;
+            margin-bottom: 0.5rem;
+        }
+
+        &>h3 {
+            font-weight: 600;
+            font-size: 1.3em;
+        }
+
+        &>h4 {
+            margin-top: 5px;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+            color: var(--color-primary);
+            font-weight: 500;
+        }
+
+        &>.button {
+            display: block;
+            background-color: var(--color-primary);
+            color: var(--color-primary-content);
+            padding: 0.5rem 2rem;
+            width: 100%;
+            text-align: center;
+            border-radius: 0.5rem;
+        }
+    }
+
+    .concert-card__details {
+        display: flex;
+        flex-direction: column;
+        gap: 0.1rem;
+        line-height: 1;
+        opacity: 0.6;
+    }
+}
+
+/* ======== VISTA SELECION ======== */
+.select {
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    &>.button {
+        display: block;
+        width: 100%;
+        border-radius: 0.5rem;
+        padding: 0.5rem 2rem;
+        background-color: rgb(94, 94, 94);
+        color: white;
+        text-align: center;
+    }
+
+    &>button {
+        width: 100%;
+        background-color: var(--color-primary);
+        color: var(--color-primary-content);
+        padding: 0.5rem 2rem;
+        border-radius: 0.5rem;
+    }
+}
+
+.select__content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    &>h1 {
+        font-size: 1.8em;
+        font-weight: 600;
+    }
+
+    &>p {
+        font-size: 1.2em;
+        opacity: 0.8;
+        font-weight: 400;
+        line-height: 1.2;
+    }
+
+    &>nav {
+        display: flex;
+        justify-content: space-between;
+        color: #00000090;
+
+        &>* {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+
+            &>figure {
+                width: 15px;
+                height: 15px;
+                border-radius: 0.25rem;
+                background-color: var(--color-secondary);
+            }
+        }
+    }
+}
+
+.scene {
+    & figure {
+        width: 40px;
+        aspect-ratio: 1;
+        border-radius: 0.25rem;
+        background-color: #00000030;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &>div {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+.row-0 {
+    display: grid;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 80%;
+    margin: auto;
+    grid-template-columns: repeat(6, 40px);
+
+    &>figure {
+        background-color: var(--color-secondary);
+    }
+}
+
+.row-1 {
+    display: grid;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 80%;
+    margin: auto;
+    grid-template-columns: repeat(8, 40px);
+
+    &>figure {
+        background-color: var(--color-success);
+    }
+}
+
+.row-2 {
+    display: grid;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 80%;
+    margin: auto;
+    grid-template-columns: repeat(10, 30px);
+
+
+    &>figure {
+        background-color: #0077ff;
+        width: 30px;
+    }
+}
+
+.buy {
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.buy__card {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 0.5rem 0.1rem #00000020;
+
+    &>p {
+        text-align: right;
+        font-size: 1.25em;
+        margin: 0.75rem 0;
+        font-weight: 500;
+    }
+
+    &>.button {
+        display: block;
+        background-color: var(--color-primary);
+        color: var(--color-primary-content);
+        padding: 0.5rem 2rem;
+        width: 100%;
+        text-align: center;
+        border-radius: 0.5rem;
+    }
+}
+
+.buy__cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    & article {
+        background-color: #6e48aa10;
+        border-radius: 1rem;
+        padding: 1rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &>div>p:first-child {
+            font-size: 1.1em;
+        }
+
+        & button {
+            background-color: var(--color-error);
+            color: var(--color-primary-content);
+            height: fit-content;
+            padding: 0.25rem;
+            border-radius: 0.25rem;
+        }
+
+        & .price {
+            color: var(--color-primary);
+            font-size: 1.1em;
+            font-weight: 600;
+        }
+    }
+}
+
+/* COMPLETE PURCHASE */
+.complete-header {
+    padding: 1rem 2rem;
+
+    & .button {
+        display: block;
+        background-color: #6e6e6e;
+        border-radius: 0.5rem;
+        color: white;
+        width: 100%;
+        text-align: center;
+        padding: 0.5rem 2rem;
+    }
+}
+
+.details {
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    &>h1 {
+        font-size: 1.8em;
+        font-weight: 500;
+        line-height: 1.1;
+    }
+
+    &>form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        & button {
+            background-color: #ccc;
+            color: white;
+            padding: 0.5rem 2rem;
+            width: 100%;
+            border-radius: 0.5rem;
+        }
+    }
+}
+
+.details__box {
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0px 0px 1rem 0.1rem #00000020;
+
+    &>h2 {
+        font-size: 1.3em;
+        font-weight: 500;
+        line-height: 1;
+        margin-bottom: 0.25rem;
+    }
+
+    &>p {
+        opacity: 0.7;
+    }
+
+    &>h3 {
+        font-size: 1.3em;
+        text-align: right;
+        font-weight: 500;
+        margin-bottom: 1rem;
+    }
+}
+
+.fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.input {
+    background-color: white;
+    padding: 0.5rem;
+    border: 1px solid#00000050;
+    border-radius: 0.25rem;
+}
+
+
+/* TICKETS */
+.tikets {
+    width: 100%;
+    padding: 2rem 1rem;
+
+    &>h2 {
+        font-size: 2em;
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+    }
+}
+
+.tikets__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.ticket__card {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 1rem 0.1rem #00000020;
+
+    &>header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &>h3 {
+            font-size: 1.1em;
+            font-weight: 500;
+            color: var(--color-primary);
+        }
+
+        &>div {
+            background-color: var(--color-success);
+            color: #ffffff89;
+            width: fit-content;
+            border-radius: 1rem;
+            padding: 0.1rem 1rem;
+            font-size: 0.8em;
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    &>hr {
+        margin: 1rem 0;
+        opacity: 0.2;
+    }
+
+    &>div {
+        &>h3 {
+            font-size: 1.3em;
+            font-weight: 500;
+            line-height: 1.1;
+        }
+
+        &>div {
+            opacity: 0.6;
+        }
+    }
+
+    &>footer {
+        display: flex;
+        gap: 1rem;
+
+        &>.card_footer__content {
+            opacity: 0.8;
+        }
+
+        &>h4 {
+            font-size: 1.4em;
+            font-weight: 500;
+            color: var(--color-primary);
+        }
+    }
+}
+
+/* CONFIRM VIEW */
+.success-container {
+    background-color: #4CAF5020;
+    padding: 1rem;
+    margin: 2rem 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    color: var(--color-success);
+    font-size: 1.2em;
+    font-weight: 500;
+
+    & h1 {
+        color: var(--color-primary);
+        font-size: 1.9em;
+        font-weight: 700;
+    }
+
+    & b {
+        font-weight: 800;
+    }
+}
+
+.section-goback {
+    padding: 0 1rem;
+
+    & .button {
+        display: block;
+        background-color: var(--color-primary);
+        color: var(--color-primary-content);
+        padding: 0.5rem 2rem;
+        width: 100%;
+        text-align: center;
+        border-radius: 0.5rem;
+    }
+}

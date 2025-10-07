@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+
+    <link rel="stylesheet" href="style-guide/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="body--main">
+    <header class="header">
+        <h1>ConcertTickets</h1>
+        <p>Completa tu compra</p>
+    </header>
+
+    <main>
+        <section class="tikets">
+            <h2>Mis Tickets</h2>
+            <div class="tikets__container">
+                <article class="ticket__card">
+                    <header>
+                        <h3>TICKET-ROCK123</h3>
+                        <div>Confirmado</div>
+                    </header>
+                    <hr>
+                    <div>
+                        <h3>Festival de rock</h3>
+                        <div>
+                            <p>
+                                <i class="fa-solid fa-calendar"></i>
+                                15 de diciembre de 2024, 20:00
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Estadio nacional
+                            </p>
+                        </div>
+                    </div>
+                    <hr>
+                    <footer>
+                        <div class="card_footer__content">
+                            <p>2 X VIP</p>
+                            <p>Comprado el: 10 de noviembre de 2024, 14:30</p>
+                        </div>
+                        <h4>
+                            $240
+                        </h4>
+                    </footer>
+                </article>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <div>
+            <a href="index.html" class="button">
+                <i class="fa-solid fa-home" style="font-size: 22px;"></i>
+                Inicio
+            </a>
+            <a href="tickets.html" class="button">
+                <i class="fa-solid fa-ticket" style="font-size: 22px; color: var(--color-primary)"></i>
+                Mis tickets
+            </a>
+            <a class="button">
+                <i class="fa-solid fa-search" style="font-size: 22px;"></i>
+                Buscar
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // GET ID
+            const search = new URLSearchParams(window.location.search);
+            const { id } = Object.fromEntries(search)
+
+            // ELEMENTS
+            const $container = document.querySelector(".tikets__container");
+
+            getBasicContent();
+
+            // HELPER FUNCTIONS
+            async function getBasicContent() {
+                const response = await fetchData("get", `http://localhost:8000/api/purchases/customer/maria.gonzalez@email.com`);
+
+                if (!response.success) return;
+
+                printContent(response.data);
+            }
+
+            async function fetchData(method, endpoint) {
+                const response = await fetch(endpoint, {
+                    headers: {
+                        "Content-Type": "application/json",
+                        "Accept": "application/json"
+                    },
+                    method
+                });
+
+                const data = await response.json();
+
+                return data;
+            }
+
+            function printContent(tikets) {
+                $container.innerHTML = "";
+                tikets.forEach(tiket => {
+                    $container.insertAdjacentHTML("beforeend", `
+                        <article class="ticket__card">
+                            <header>
+                                <h3>${tiket.confirmation_code}</h3>
+                                <div>Confirmado</div>
+                            </header>
+                            <hr>
+                            <div>
+                                <h3>${tiket.ticket_details.event_name}</h3>
+                                <div>
+                                    <p>
+                                        <i class="fa-solid fa-calendar"></i>
+                                        ${tiket.ticket_details.event_date}
+                                    </p>
+                                    <p>
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        ${tiket.ticket_details.event_venue}
+                                    </p>
+                                </div>
+                            </div>
+                            <hr>
+                            <footer>
+                                <div class="card_footer__content">
+                                    <p>${tiket.ticket_details.quantity} X ${tiket.ticket_details.section_name}</p>
+                                    <p>Comprado el: ${tiket.purchase_date}</p>
+                                </div>
+                                <h4>
+                                    $${tiket.ticket_details.total}
+                                </h4>
+                            </footer>
+                        </article>
+                    `);
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+
+    <link rel="stylesheet" href="style-guide/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="body--main">
+    <header class="header">
+        <h1>ConcertTickets</h1>
+        <p>Completa tu compra</p>
+    </header>
+
+    <main>
+        <section class="complete-header">
+            <a href="select.html" class="button">
+                <i class="fa-solid fa-arrow-left"></i>
+                Volver a la selección de asientos
+            </a>
+        </section>
+
+        <section class="details">
+            <h1>Completa tu compra</h1>
+            <div class="details__box">
+                <h2 id="name">cargando...</h2>
+                <p id="date">cargando...</p>
+                <p id="venue">cargando...</p>
+
+                <p id="list">
+                    cargando...
+                </p>
+
+                <h3 id="total">Total: cargando...</h3>
+            </div>
+            <form method="post" action="./confirm.html">
+                <fieldset class="fieldset">
+                    <label for="nombre" class="fieldset-label">
+                        Nombre Completo
+                    </label>
+                    <input type="text" class="input" id="nombre" placeholder="Tu nombre" required>
+                </fieldset>
+                <fieldset class="fieldset">
+                    <label for="nombre" class="fieldset-label">
+                        Correo electrónico
+                    </label>
+                    <input type="email" class="input" id="nombre" placeholder="Tu@email" required>
+                </fieldset>
+                <fieldset class="fieldset">
+                    <button>
+                        <div class="fa-solid fa-check"></div>
+                        Confirmar Compra
+                    </button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <div>
+            <a href="index.html" class="button">
+                <i class="fa-solid fa-home" style="font-size: 22px;"></i>
+                Inicio
+            </a>
+            <a href="tickets.html" class="button">
+                <i class="fa-solid fa-ticket" style="font-size: 22px;"></i>
+                Mis tickets
+            </a>
+            <a class="button">
+                <i class="fa-solid fa-search" style="font-size: 22px;"></i>
+                Buscar
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // GET ID
+            const id = 1;
+
+            // ELEMENTS
+            const $name = document.getElementById("name");
+            const $date = document.getElementById("date");
+            const $venue = document.getElementById("venue");
+            const $list = document.getElementById("list");
+            const $total = document.getElementById("total");
+
+            getBasicContent();
+
+            // HELPER FUNCTIONS
+            async function getBasicContent() {
+                const response = await fetchData("get", `http://localhost:8000/api/purchases/${id}`);
+
+                if (!response.success) return;
+
+                printContent(response.data);
+            }
+
+            async function fetchData(method, endpoint) {
+                const response = await fetch(endpoint, {
+                    headers: {
+                        "Content-Type": "application/json",
+                        "Accept": "application/json"
+                    },
+                    method
+                });
+
+                const data = await response.json();
+
+                return data;
+            }
+
+            function printContent(data) {
+                console.log(data);
+                $name.innerText = data.event.name;
+                $venue.innerText = data.event.venue;
+                $date.innerText = new Date(data.event.date).toLocaleString();
+                $total.innerText = `Total: $${data.total}`;
+                $list.innerText = `${data.quantity} ${data.section.name} ${data.section.price}`;
+            }
+        });
+    </script>
+</body>
+
+</html>
