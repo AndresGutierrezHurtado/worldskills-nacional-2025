@@ -102,6 +102,16 @@ El enfoque fue construir una solución limpia, escalable y fácilmente mantenibl
 
 ---
 
+### Módulo E – Frontend con Frameworks (30%)
+
+El último módulo consistió en desarrollar un **frontend adaptado a mobile con frameworks modernos**.
+
+Debido a restricciones en el uso de ciertas librerías como _React Router DOM_, se optó por una solución alternativa basada en **HTML y CSS puros**, manteniendo una estructura clara y diseño fiel al modelo base.
+
+[Ver detalles de la prueba](./modulo-e/README.md)
+
+---
+
 ## 📬 Contacto
 
 Para preguntas, soporte o colaboración, por favor contacta:
