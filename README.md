@@ -47,9 +47,9 @@ _Entrevista con Cristian Henao, creador de contenido sobre programación, durant
 
 ## 🏆 ¿Qué son las WorldSkills?
 
-Las **WorldSkills** son una competencia internacional en la que aprendices de todo el mundo demuestran sus habilidades en diversas áreas técnicas y tecnológicas, como **programación, diseño, robótica, cocina**, entre muchas otras.  
+Las **WorldSkills** son una competencia internacional en la que aprendices de todo el mundo demuestran sus habilidades en diversas áreas técnicas y tecnológicas, como **programación, diseño, robótica, cocina**, entre muchas otras.
 
-Son, en esencia, las **olimpiadas de las habilidades técnicas**, donde no solo se evalúan conocimientos, sino también la capacidad de trabajar bajo presión y en condiciones que simulan un entorno laboral real.  
+Son, en esencia, las **olimpiadas de las habilidades técnicas**, donde no solo se evalúan conocimientos, sino también la capacidad de trabajar bajo presión y en condiciones que simulan un entorno laboral real.
 
 El objetivo principal de las WorldSkills es **destacar el nivel de formación, talento y excelencia** de los estudiantes y profesionales, además de **impulsar la educación práctica** y la mejora continua en los estándares de calidad del trabajo técnico.
 
@@ -72,9 +72,9 @@ El propósito del módulo fue comprobar la **capacidad de análisis, razonamient
 
 ---
 
-### Módulo B – Desarrollo Frontend (15%)
+### Módulo B – Desarrollo Frontend sin Frameworks (15%)
 
-El segundo módulo tuvo como objetivo desarrollar una **interfaz web a partir de un diseño de referencia**, cuidando aspectos de maquetación, estilos y responsividad.  
+El segundo módulo tuvo como objetivo desarrollar una **interfaz web a partir de un diseño de referencia**, cuidando aspectos de maquetación, estilos y responsividad.
 
 Se evaluó el uso correcto de **HTML, CSS sin JavaScript**, replicando fielmente el diseño original.
 
@@ -89,6 +89,16 @@ En este módulo se debía construir una **API REST funcional utilizando únicame
 La prueba evaluó la capacidad para manejar rutas, peticiones HTTP, validaciones y respuestas JSON de forma manual.
 
 [Ver detalles de la prueba](./modulo-c/README.md)
+
+---
+
+### Módulo D – Backend con Frameworks (Laravel) (30%)
+
+Este módulo se centró en el desarrollo de una **API con el framework Laravel**, aplicando conceptos de MVC, rutas, controladores, modelos, migraciones y buenas prácticas de arquitectura backend.
+
+El enfoque fue construir una solución limpia, escalable y fácilmente mantenible.
+
+[Ver detalles de la prueba](./modulo-d/README.md)
 
 ---
 
