@@ -82,6 +82,16 @@ Se evaluó el uso correcto de **HTML, CSS sin JavaScript**, replicando fielmente
 
 ---
 
+### Módulo C – Desarrollo Backend sin frameworks (PHP nativo) (15%)
+
+En este módulo se debía construir una **API REST funcional utilizando únicamente PHP nativo** con persistencia en JSON, sin librerías ni frameworks externos.
+
+La prueba evaluó la capacidad para manejar rutas, peticiones HTTP, validaciones y respuestas JSON de forma manual.
+
+[Ver detalles de la prueba](./modulo-c/README.md)
+
+---
+
 ## 📬 Contacto
 
 Para preguntas, soporte o colaboración, por favor contacta:
