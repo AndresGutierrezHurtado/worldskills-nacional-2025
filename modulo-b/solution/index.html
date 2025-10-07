@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio Travesía</title>
+    <meta name="author" content="Andrés Gutiérrez Hurtado">
+    <meta name="description" content=" sitio web para la promoción y compra de Kits para la Bio Travesía MTB Caño Cristales 2025">
+
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <input type="checkbox" id="menu_mobile">
+
+    <header class="header">
+        <div class="container header__container">
+            <div class="header__brand">
+                <figure>
+                    <img src="./assets/images/Logo.png" alt="Imagen de logo">
+                </figure>
+                <h1>Bio Travesía</h1>
+            </div>
+            <nav class="header__mobile">
+                <label for="menu_mobile">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-x"></i>
+                </label for="menu_mobile">
+            </nav>
+            <nav class="header__list">
+                <a href="#about" aria-label="Enlace para ir a la seccion de información">
+                    Información
+                </a>
+                <a href="#kits" aria-label="Enlace para ir a la seccion de Kits">
+                    Kits
+                </a>
+                <a href="#sponsors" aria-label="Enlace para ir a la seccion de Sponsors">
+                    Sponsors
+                </a>
+                <a href="#register" aria-label="Enlace para ir a la seccion de Registro">
+                    Registro
+                </a>
+                <a href="#footer" aria-label="Enlace para ir a la seccion de Contacto">
+                    Contacto
+                </a>
+            </nav>
+        </div>
+        <div class="header__mobile-content">
+            <a href="#about">
+                Información
+            </a>
+            <a href="#kits">
+                Kits
+            </a>
+            <a href="#sponsors">
+                Sponsors
+            </a>
+            <a href="#register">
+                Registro
+            </a>
+            <a href="#footer">
+                Contacto
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero" id="hero">
+            <div class="container">
+                <div class="hero__content">
+                    <h1>Bio Travesía en Bicicleta Caño Cristales 2025</h1>
+                    <P>
+                        Vive la aventura de explorar uno de los destinos más encantadores del mundo en bicicleta.
+                        Disfruta
+                        de paisajes únicos y una experiencia natural inolvidable.
+                    </P>
+                    <a href="#kits" aria-label="Enlace ver opciones de kits">
+                        <button>
+                            Reserva tu kit ahora
+                        </button>
+                    </a>
+                </div>
+                <figure class="hero__video">
+                    <video src="./assets/images/Cano_Cristales_MTB.mp4" loop="true" autoplay muted></video>
+                </figure>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="about" id="about">
+            <div class="container container-lg about__container">
+                <h2>¿Qué es la vio Travesía Caño Cristales?</h2>
+
+                <div class="about__card-container">
+                    <article class="about__card" tabindex="0">
+                        <figure>
+                            <img src="./assets/images/cano_cristales.jpg" alt="Caño cristales" width="500" height="500" loading="lazy">
+                        </figure>
+                        <div class="about__card-content">
+                            <h3>El destino</h3>
+                            <p>
+                                Caño Cristales, conocido como el "río de los cinco colores", es una maravilla natural
+                                ubicada en la Sierra de la Macarena,
+                                Meta, Colombia. Sus aguas cristalinas y la presencia de plantas acuáticas que cambian de
+                                color crean un espectáculo visual único en el mundo
+                            </p>
+                        </div>
+                    </article>
+                    <article class="about__card" tabindex="0">
+                        <figure style="background-color: var(--color-primary-light);">
+                            <img src="./assets/images/etapa-1.jpg" alt="Travesía en bicicleta" width="500" height="500" loading="lazy">
+                        </figure>
+                        <div class="about__card-content">
+                            <h3>La Travesía</h3>
+                            <p>
+                                Nuestra Bio Travesía en bicicleta te llevará por rutas especialmente seleccionadas para
+                                disfrutar de los
+                                paisajes más impresionantes de la región. Pedalea entre cascadas, pozos naturales y
+                                formaciones rocosas
+                                únicas mientras conectas con la naturaleza.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="about__card" tabindex="0">
+                        <figure style="background-color: var(--color-secondary);">
+                            <img src="./assets/images/cano_cristales2.png" alt="Caño cristales" width="500" height="500" loading="lazy">
+                        </figure>
+                        <div class="about__card-content">
+                            <h3>Fechas 2025</h3>
+                            <p>
+                                La travesía se realizará durante la temporada de verano (junio a noviembre) cuando el
+                                río
+                                muestra sus colores más vibrantes.
+                                Tenemos salidas programadas cada mes durante este período. ¡No te quedes sin tu cupo!
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- KITS SECTION -->
+        <section class="kits" id="kits">
+            <div class="container container-lg kits__container">
+                <h2>Kits Disponibles</h2>
+
+                <div class="kit__card-container">
+                    <article class="kit__card">
+                        <figure>
+                            <img src="./assets/images/kit_basico.png" alt="Imagen del kit básico" width="500" height="500" loading="lazy">
+                        </figure>
+                        <div class="kit__card-content">
+                            <h3>Kit Básico</h3>
+                            <p>Ideal para ciclistas que ya tienen algo de experiencia y equipo básico.</p>
+                            <h4>$150.000 COP</h4>
+                            <ul>
+                                <li>
+                                    <div class="fa-solid fa-check"></div>
+                                    Guía de rutas y mapas
+                                </li>
+                                <li>
+                                    <div class="fa-solid fa-check"></div>
+                                    Camiseta conmemorativa
+                                </li>
+                                <li>
+                                    <div class="fa-solid fa-check"></div>
+                                    Hidratación básica
+                                </li>
+                                <li>
+                                    <div class="fa-solid fa-check"></div>
+                                    Snacks energéticos
+                                </li>
+                            </ul>
+                            <a href="#register" aria-label="Enlace para ir a la seccion de Registro">
+                                <button>
+                                    Seleccionar
+                                </button>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="kit__card">
+                        <figure>
+                            <img src="./assets/images/kit_Standard.png" alt="Imagen del kit básico" width="500" height="500" loading="lazy">
+                        </figure>
+                        <div class="kit__card-content">
+                            <h3>Kit Standard</h3>
+                            <p>Perfecto para quienes buscan una experiencia completa sin preocupaciones.</p>
+                            <h4>$250.000 COP</h4>
+                            <ul>
+                                <li>
+                                    <div class="fa-solid fa-check"></div>
+                                    Todo lo del Kit Básico
+                                </li>
+                                <li>
+                                    <div class="fa-solid fa-check"></div>
+                                    Alquiler de bicicleta estándar
+                                </li>
+                                <li>
+                                    <div class="fa-solid fa-check"></div>
+                                    Almuerzo típico incluido
+                                </li>
+                                <li>
+                                    <div class="fa-solid fa-check"></div>
+                                    Seguro contra accidentes
+                                </li>
+                                <li>
+                                    <div class="fa-solid fa-check"></div>
+                                    Fotos profesionales del recorrido
+                                </li>
+                            </ul>
+                            <a href="#register" aria-label="Enlace para ir a la seccion de Registro">
+                                <button>
+                                    Seleccionar
+                                </button>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="kit__card">
+                        <figure>
+                            <img src="./assets/images/kit_premium.png" alt="Imagen del kit básico" width="500" height="500" loading="lazy">
+                        </figure>
+                        <div class="kit__card-content">
+                            <h3>Kit Premium</h3>
+                            <p>La experiencia definitiva para los amantes del ciclismo y la naturaleza.</p>
+                            <h4>$400.000 COP</h4>
+                            <ul>
+                                <li>
+                                    <div class="fa-solid fa-check"></div>
+                                    Todo lo del Kit Standard
+                                </li>
+                                <li>
+                                    <div class="fa-solid fa-check"></div>
+                                    Bicicleta de alta gama
+                                </li>
+                                <li>
+                                    <div class="fa-solid fa-check"></div>
+                                    Hidratación premium y alimentos gourmet
+                                </li>
+                                <li>
+                                    <div class="fa-solid fa-check"></div>
+                                    Guía especializado privado
+                                </li>
+                                <li>
+                                    <div class="fa-solid fa-check"></div>
+                                    Transporte desde y hacia el alojamiento
+                                </li>
+                                <li>
+                                    <div class="fa-solid fa-check"></div>
+                                    Acceso a zonas exclusivas
+                                </li>
+                            </ul>
+                            <a href="#register" aria-label="Enlace para ir a la seccion de Registro">
+                                <button>
+                                    Seleccionar
+                                </button>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- SPONSORS -->
+        <section class="sponsors" id="sponsors">
+            <div class="container container-lg sponsors__container">
+                <h2>Nuestros Sponsors Oficiales</h2>
+                <p class="title-mobile">Desplázate hacia abajo para ver todos los sponsors</p>
+                <p class="title-desktop">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    Desplázate para ver más sponsors
+                    <i class="fa-solid fa-arrow-right"></i>
+                </p>
+
+                <div class="sponsors__card-container">
+                    <article class="sponsors__card" tabindex="0">
+                        <figure>
+                            <img src="./assets/images/logo_water.png" alt="Logo marca water" width="500" height="500" loading="lazy">
+                        </figure>
+                        <div class="sponsors__card-content">
+                            <h3>NATURE WATER</h3>
+                            <p>Hidratación Sostenible</p>
+                            <p>
+                                Proveedor de sistemas de hidratación ecológicos y agua purificada para todos los
+                                participantes.
+                            </p>
+                            <a href="#register" class="link">Descubrir productos</a>
+                        </div>
+                    </article>
+                    <article class="sponsors__card" tabindex="0">
+                        <figure>
+                            <img src="./assets/images/logo_adventure.png" alt="Logo marca adventure" width="500" height="500" loading="lazy">
+                        </figure>
+                        <div class="sponsors__card-content">
+                            <h3>ADVENTURE GEAR</h3>
+                            <p>Equipamiento de Aventura</p>
+                            <p>
+                                Especialistas en equipos de alta calidad para aventuras al aire libre y expediciones.
+                            </p>
+                            <a href="#register" class="link">Descubrir productos</a>
+                        </div>
+                    </article>
+                    <article class="sponsors__card" tabindex="0">
+                        <figure>
+                            <img src="./assets/images/logo_bio.png" alt="Logo marca adventure" width="500" height="500" loading="lazy">
+                        </figure>
+                        <div class="sponsors__card-content">
+                            <h3>BIO FOOD</h3>
+                            <p>Hidratación Sostenible</p>
+                            <p>
+                                Proveedor de sistemas de hidratación ecológicos y agua purificada para todos los
+                                participantes.
+                            </p>
+                            <a href="#register" class="link">Descubrir productos</a>
+                        </div>
+                    </article>
+                    <article class="sponsors__card" tabindex="0">
+                        <figure>
+                            <img src="./assets/images/logo_energy.png" alt="Logo marca adventure" width="500" height="500" loading="lazy">
+                        </figure>
+                        <div class="sponsors__card-content">
+                            <h3>GREEN ENERGY</h3>
+                            <p>Hidratación Sostenible</p>
+                            <p>
+                                Proveedor de sistemas de hidratación ecológicos y agua purificada para todos los
+                                participantes.
+                            </p>
+                            <a href="#register" class="link">Descubrir productos</a>
+                        </div>
+                    </article>
+                    <article class="sponsors__card" tabindex="0">
+                        <figure>
+                            <img src="./assets/images/logo.png" alt="Logo marca adventure" width="500" height="500" loading="lazy">
+                        </figure>
+                        <div class="sponsors__card-content">
+                            <h3>OUTDOOR EQUIPMENT</h3>
+                            <p>Hidratación Sostenible</p>
+                            <p>
+                                Proveedor de sistemas de hidratación ecológicos y agua purificada para todos los
+                                participantes.
+                            </p>
+                            <a href="#register" class="link">Descubrir productos</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="register" id="register">
+            <div class="container container-lg register__container">
+                <h2>Registro y Compra de Kits</h2>
+                <form action="#" class="register__form">
+                    <fieldset class="fieldset">
+                        <label for="name" class="fieldset-label">
+                            Nombre Completo
+                        </label>
+                        <input type="text" class="input" id="name" placeholder="Ingresa el nombre" required>
+                    </fieldset>
+                    <fieldset class="fieldset">
+                        <label for="email" class="fieldset-label">
+                            Correo electrónico
+                        </label>
+                        <input type="email" class="input" id="email" placeholder="Ingresa el correo" required>
+                    </fieldset>
+                    <fieldset class="fieldset">
+                        <label for="phone" class="fieldset-label">
+                            Teléfono de contacto
+                        </label>
+                        <input type="number" inputmode="tel" class="input" id="phone" placeholder="Ingresa el telefono"
+                            required>
+                    </fieldset>
+                    <fieldset class="fieldset">
+                        <label for="kit" class="fieldset-label">
+                            Selecciona tu kit
+                        </label>
+                        <select name="kit" id="kit" class="input" required>
+                            <option value="">-- Selecciona un kit --</option>
+                            <option value="1">Kit Basico</option>
+                            <option value="1">Kit Standard</option>
+                            <option value="1">Kit Premium</option>
+                        </select>
+                    </fieldset>
+                    <fieldset class="fieldset">
+                        <label for="quantity" class="fieldset-label">
+                            Cantidad
+                        </label>
+                        <input type="number" class="input" id="quantity" min="1" placeholder="Ingresa la cantidad"
+                            required>
+                    </fieldset>
+                    <fieldset class="fieldset">
+                        <label for="quantity" class="fieldset-label">
+                            Fecha preferida de travesía
+                        </label>
+                        <input type="date" class="input" id="quantity" placeholder="Ingresa la fecha" required>
+                    </fieldset>
+                    <button type="submit" aria-label="Boton para enviar formulario de registro">Resevar ahora</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="footer">
+        <div class="container container-lg footer__container">
+            <div class="footer__columns">
+                <div>
+                    <h2>Contacto</h2>
+                    <p>info@biotravesiacanocristales.com</p>
+                    <p>+57 1 2345678</p>
+                    <p>Cra 45 #72-15, Bogotá, Colombia</p>
+                </div>
+                <div>
+                    <h2>Síguenos</h2>
+                    <p>No te pierdas ninguna actualización sobre la Bio Travesía</p>
+                    <div class="brands__icons">
+                        <a href="#" class="button">
+                            <i class="fa-brands fa-facebook" aria-label="Link para ir a la red social de facebook"></i>
+                        </a>
+                        <a href="#" class="button">
+                            <i class="fa-brands fa-instagram" aria-label="Link para ir a la red social de instagram"></i>
+                        </a>
+                        <a href="#" class="button">
+                            <i class="fa-brands fa-twitter" aria-label="Link para ir a la red social de twitter"></i>
+                        </a>
+                        <a href="#" class="button">
+                            <i class="fa-brands fa-youtube" aria-label="Link para ir a la red social de youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h2>NewsLetter</h2>
+                    <p>
+                        Suscríbete para recibir información sobre fechas, promociones y consejos para la travesía
+                    </p>
+                    <form>
+                        <fieldset class="fieldset">
+                            <input type="email" class="input" id="email" placeholder="Tu correo electrónico" required>
+                            <button type="submit" aria-label="Boton para subir formulario de suscripcion">Suscribirse</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__footer">
+                &copy; 2023 Bio Travesía Caño Cristales 2025. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
