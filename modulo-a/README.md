@@ -6,6 +6,8 @@ Este módulo tuvo como objetivo evaluar las **bases lógicas y algorítmicas** d
 
 La prueba estuvo conformada por **9 ejercicios independientes**, cada uno con un nivel de dificultad distinto y una ponderación específica sobre el total del módulo. Estos ejercicios abarcaban desde operaciones lógicas simples hasta pequeños desarrollos de interfaz, combinando el uso de **PHP, JavaScript, HTML y CSS**.
 
+---
+
 ## Desempeño Personal
 
 Aunque el tiempo disponible fue muy ajustado y no alcancé a completar la mitad de los ejercicios, enfoqué mi estrategia en **resolver primero los de mayor ponderación**, priorizando la dificultad sobre la cantidad.
@@ -18,6 +20,7 @@ De los **9 ejercicios totales**, logré desarrollar:
 
 En total, obtuve aproximadamente **4.85 puntos de 10 posibles**, destacando en la parte de **análisis lógico y eficiencia en código**.
 
+---
 
 ## Ejecutar el proyecto
 
