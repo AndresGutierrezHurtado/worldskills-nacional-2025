@@ -1,6 +1,6 @@
 # Módulo A – Ejercicios Técnicos (Sueldos, Lógica y Fundamentos)
 
-🔙 [Volver al README principal](../README.md)
+[🔙 Volver al inicio](../README.md#-módulos-de-competencia)
 
 Este módulo tuvo como objetivo evaluar las **bases lógicas y algorítmicas** del competidor, así como su capacidad para **analizar problemas y proponer soluciones eficientes bajo presión de tiempo**.
 

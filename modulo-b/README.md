@@ -1,6 +1,6 @@
 # Módulo B – Desarrollo Frontend (Recrear interfaz)
 
-🔙 [Volver al README principal](../README.md)
+[🔙 Volver al inicio](../README.md#-módulos-de-competencia)
 
 Este módulo tuvo como objetivo evaluar la **capacidad del competidor para interpretar y reproducir una interfaz gráfica a partir de un diseño de referencia**, utilizando exclusivamente **HTML y CSS**, sin apoyo de frameworks, preprocesadores o JavaScript.
 

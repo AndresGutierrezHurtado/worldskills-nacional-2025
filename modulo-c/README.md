@@ -1,6 +1,8 @@
 # Módulo C – Desarrollo de API REST (PHP Nativo)
 
-🔙 [Volver al README principal](../README.md)
+[🔙 Volver al inicio](../README.md#-módulos-de-competencia)
+
+[📄 Ver prueba](./Proyecto%20Prueba_Modulo_C.pdf)
 
 En este módulo se debía construir una **API REST completamente funcional utilizando únicamente PHP nativo**, sin apoyo de frameworks ni librerías externas.  
 La persistencia de los datos debía realizarse mediante un **archivo JSON**, implementando manualmente la gestión de rutas, peticiones HTTP, validaciones y respuestas en formato JSON.

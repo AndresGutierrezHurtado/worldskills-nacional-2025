@@ -1,6 +1,8 @@
 # Módulo D – Desarrollo Backend con Laravel
 
-🔙 [Volver al README principal](../README.md)
+[🔙 Volver al inicio](../README.md#-módulos-de-competencia)
+
+[📄 Ver prueba](./Proyecto%20Prueba_Modulo_D.pdf)
 
 En este módulo se debía desarrollar un **backend completo utilizando el framework Laravel**, aplicando conceptos de arquitectura MVC, controladores, rutas, validaciones, y comunicación con bases de datos.
 

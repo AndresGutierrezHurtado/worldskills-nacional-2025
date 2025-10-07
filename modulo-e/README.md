@@ -1,6 +1,8 @@
 # Módulo E – Integración Frontend con Consumo de API
 
-🔙 [Volver al README principal](../README.md)
+[🔙 Volver al inicio](../README.md#-módulos-de-competencia)
+
+[📄 Ver prueba](./Proyecto%20Prueba_Modulo_E.pdf)
 
 En este módulo se debía desarrollar una **interfaz web adaptada a mobile que consumiera datos desde una API**, evaluando tanto la parte visual como la capacidad de integración y manejo dinámico del DOM.
 
