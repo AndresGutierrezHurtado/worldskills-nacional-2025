@@ -21,6 +21,16 @@ Aquí encontrarás todas las **tareas entregadas**, los **recursos utilizados** 
 
 ---
 
+## 📚 Tabla de Contenidos
+
+-   [🏅 Highlights de la Competencia](#-highlights-de-la-competencia)
+-   [🏆 ¿Qué son las WorldSkills?](#-qué-son-las-worldskills)
+-   [📁 Estructura del Repositorio](#-estructura-del-repositorio)
+-   [🎯 Módulos de Competencia](#-módulos-de-competencia)
+-   [📬 Contacto](#-contacto)
+
+---
+
 ## 🏅 Highlights de la Competencia
 
 <div align="center">
@@ -52,6 +62,22 @@ Las **WorldSkills** son una competencia internacional en la que aprendices de to
 Son, en esencia, las **olimpiadas de las habilidades técnicas**, donde no solo se evalúan conocimientos, sino también la capacidad de trabajar bajo presión y en condiciones que simulan un entorno laboral real.
 
 El objetivo principal de las WorldSkills es **destacar el nivel de formación, talento y excelencia** de los estudiantes y profesionales, además de **impulsar la educación práctica** y la mejora continua en los estándares de calidad del trabajo técnico.
+
+---
+
+## 📁 Estructura del Repositorio
+
+```bash
+worldskills-nacional-2025/
+├── docs/                       # Documentacion e información de la competencia
+├── modulo-a/                   # Módulo A - Ejercicios técnicos
+├── modulo-b/                   # Módulo B - Desarrollo frontend
+├── modulo-c/                   # Módulo C - Desarrollo backend
+├── modulo-d/                   # Módulo D - Backend con frameworks
+├── modulo-e/                   # Módulo E - Frontend con frameworks
+│
+└── README.md                   # Documentación principal del repositorio
+```
 
 ---
 
