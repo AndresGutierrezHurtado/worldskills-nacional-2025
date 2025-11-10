@@ -36,19 +36,19 @@ Aquí encontrarás todas las **tareas entregadas**, los **recursos utilizados** 
 
 <div align="center">
 
-<img src="docs/images/team.jpg" alt="Ceremonia Nacional" width="400" height="300" style="object-fit: cover; border-radius: 8px; margin: 10px;">
+<img src="docs/images/team.jpg" alt="Ceremonia Nacional" width="400" style="object-fit: cover; border-radius: 8px; margin: 10px;">
 
 _Delegación del Distrito Capital 2025_
 
-<img src="docs/images/competing.jpg" alt="Medalla Nacional" width="400" height="300" style="object-fit: cover; border-radius: 8px; margin: 10px;">
+<img src="docs/images/competing.jpg" alt="Medalla Nacional" width="400" style="object-fit: cover; border-radius: 8px; margin: 10px;">
 
 _Durante la ejecución de las pruebas técnicas en la competencia nacional_
 
-<img src="docs/images/equipment.jpg" alt="Ceremonia Nacional" width="400" height="300" style="object-fit: cover; border-radius: 8px; margin: 10px;">
+<img src="docs/images/equipment.jpg" alt="Ceremonia Nacional" width="400" style="object-fit: cover; border-radius: 8px; margin: 10px;">
 
 _Medalla y camiseta obtenidas por alcanzar el primer lugar nacional._
 
-<img src="docs/images/codejavu.jpg" alt="Durante la prueba nacional" width="400" height="300" style="object-fit: cover; border-radius: 8px; margin: 10px;">
+<img src="docs/images/codejavu.jpg" alt="Durante la prueba nacional" width="400" style="object-fit: cover; border-radius: 8px; margin: 10px;">
 
 _Entrevista con Cristian Henao, creador de contenido sobre programación, durante la competencia nacional_
 
