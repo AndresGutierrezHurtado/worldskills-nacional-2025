@@ -2,6 +2,8 @@
 
 [🥈 Ver anterior competencia (Preselección)](https://github.com/AndresGutierrezHurtado/worldskills-preseleccion-2025)
 
+[🥇 Ver siguiente competencia (Américas)](https://github.com/AndresGutierrezHurtado/worldskills-americas-2025)
+
 Este repositorio reúne todo el trabajo que desarrollé durante mi participación en la **competencia nacional WorldSkills Colombia 2025**, en la habilidad **17 - Tecnologías Web**, donde obtuve el **primer lugar a nivel nacional** 🥇.
 
 Durante tres días de competencia, representé a la regional **Distrito Capital** enfrentando pruebas de alto nivel técnico que pusieron a prueba mi conocimiento, capacidad de adaptación y manejo del tiempo bajo presión.
@@ -144,6 +146,6 @@ Para preguntas, soporte o colaboración, por favor contacta:
 
 -   Andrés Gutiérrez Hurtado
 -   Correo: [andres52885241@gmail.com](mailto:andres52885241@gmail.com)
--   LinkedIn: [Andrés Gutiérrez](https://www.linkedin.com/in/andr%C3%A9s-guti%C3%A9rrez-hurtado-25946728b/)
+-   LinkedIn: [Andrés Gutiérrez](https://www.linkedin.com/in/andresgh-dev)
 -   GitHub: [@AndresGutierrezHurtado](https://github.com/AndresGutierrezHurtado)
 -   Portafolio: [Link portafolio](https://andres-portfolio-b4dv.onrender.com)
